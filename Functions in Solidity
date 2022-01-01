@@ -1,0 +1,35 @@
+pragma solidity >= 0.6.0 < 0.9.0;
+
+/*
+ Key points about functions
+- Functions carry out a specific task.
+- A function is a reusable code that can be called anywhere in your program.
+- It satisfies the famous term in programming called "Don't repeat your code if you don't have to".
+- It helps programmers in writing modular codes.
+- Functions allow programmers to divide a big program into a number of small and manageable functions.
+
+ Syntax of functions 
+
+ function-name (parameter-list) scope returns(type) {
+    statements      
+ }
+*/
+
+contract Functions{
+    
+ function AddValues () public view returns(uint) 
+ {
+     // Remember that all the variables that we write in the functions remain localized inside the function
+     uint a = 5;
+   	 uint b = 3;
+     uint sum = a + b;
+   	 return sum;
+ }
+
+ function multiplyCalculator( uint a,uint b) public view returns(uint){
+     
+     uint product = a * b;
+     return product;
+ }
+
+}
