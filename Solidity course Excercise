@@ -1,0 +1,8 @@
+pragma solidity ^0.6.0;
+
+contract VariablesExcercise{
+
+    uint public wallet = 500;
+    bool public spend = false;
+    string public notifySpend = "You have spent Money!";
+}
